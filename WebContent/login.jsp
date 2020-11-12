@@ -1,0 +1,81 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+<%@ include file="bt.jsp" %>
+</head>
+<body background="image\image1.jpg"
+	style="background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+	<div class="container-fluid">
+		<nav aria-label="breadcrumb" style="height: 30px">
+			<ol class="breadcrumb" style="height: 30px">
+				<li class="breadcrumb-item" style="margin-top: -7px"><a
+					href="#"><small>售前客服</small></a></li>
+				<li class="breadcrumb-item" style="margin-top: -7px"><a
+					href="#"><small>售后服务</small></a></li>
+				<li class="nav-item dropdown" style="margin-top: -12px"><small><a
+				class="nav-link dropdown-toggle" href="login.jsp" id="navbarDropdown"
+				role="button" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false"> ${username==null?"登录":username} </a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="reg.jsp">注册</a> 
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="/test02/Logout">注销</a>
+				</div></small></li>
+				<li class="breadcrumb-item active" aria-current="page"
+					style="margin-top: -7px"><small>售前咨询电话400-886-1234</small></li>
+			</ol>
+		</nav>
+		<div class="row">
+			<div class="col-md-5">
+				<div class="jumbotron"
+					style="margin-top: 10px; background-color: #FFFAFA">
+					<h1 class="display-4" style="color: #778899">壹家保险</h1>
+					<p class="lead" style="color: #778899">守护你的快乐每一天！</p>
+					<hr class="my-4">
+					<p style="color: #778899">点击下方了解我们</p>
+					<a class="btn btn-primary btn-lg" href="#" role="button"
+						style="background-color: #BC8F8F; border-color: #BC8F8F">关于我们</a>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col">
+			<p style="color:red">${info}</p>
+				<form method="post" action="LoginAction" style="margin-top: 10px">
+					<div class="form-group">
+						<label for="exampleInputEmail1">用户名：</label> <input type="text"
+							name="username" value="${input_name}" class="form-control"
+							id="exampleInputText" aria-describedby="emailHelp"
+							placeholder="用户名">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">密 码：</label> <input
+							type="password" name="password" class="form-control"
+							id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="form-group row">
+						<label for="inputPassword3" class="col-sm-2 col-form-label">校验码：</label>
+						<div class="col-sm-4">
+							<input type="text" name="jym" class="form-control"
+								placeholder="校验码">
+						</div>
+						<div class="col-sm-2">
+							<img src="ResponseImage" style="margin-top: 4px">
+						</div>
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">选我同意</label>
+					</div>
+					<button type="submit" class="btn btn-primary"
+						style="background-color: #5F9EA0; border-color: #5F9EA0">登录</button>
+					<a href="reg.jsp" style="margin-left: 400px;">点击注册</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

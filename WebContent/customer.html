@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+<script src="bootstrap-4.4.1-dist/jquery-3.0.0.min.js"></script>
+<script src="bootstrap-4.4.1-dist/popper.min.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+<style>
+html {
+	overflow-x: hidden;
+}
+
+li {
+	font-size: 18px;
+}
+
+#navbarDropdown {
+	color: black;
+}
+
+#daohang1 {
+	color: black;
+}
+
+#daohang2 {
+	color: black;
+}
+
+#daohang3 {
+	color: black;
+}
+
+.boss {
+	width: 1320px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.boss div {
+	width: 228px;
+	float: left;
+	margin-left: 20px;
+}
+
+.boss div img {
+	display: block;
+	width: 100%;
+}
+
+.imageText1 a {
+	float: left;
+	margin-left: 5px;
+	margin-top: 36px;
+	font-size: 18px;
+}
+
+.imageText1 img {
+	float: left;
+	margin-top: 20px;
+	margin-left: 70px;
+}
+
+.imageText2 a {
+	float: left;
+	margin-left: 5px;
+	margin-top: 36px;
+	font-size: 18px;
+}
+
+.imageText2 img {
+	float: left;
+	margin-top: 20px;
+	margin-left: 220px;
+}
+
+.imageText3 a {
+	float: left;
+	margin-left: 7px;
+	margin-top: 27px;
+	font-size: 18px;
+}
+
+.imageText3 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 70px;
+}
+
+.imageText4 a {
+	float: left;
+	margin-left: 4px;
+	margin-top: 27px;
+	font-size: 18px;
+}
+
+.imageText4 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 220px;
+}
+
+.imageText5 a {
+	float: left;
+	margin-left: 7px;
+	margin-top: 27px;
+	font-size: 18px;
+}
+
+.imageText5 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 70px;
+}
+
+.imageText6 a {
+	float: left;
+	margin-left: 6px;
+	margin-top: 27px;
+	font-size: 18px;
+}
+
+.imageText6 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 190px;
+}
+
+.imageText7 a {
+	float: left;
+	margin-left: 5px;
+	margin-top: 36px;
+	font-size: 18px;
+}
+
+.imageText7 img {
+	float: left;
+	margin-top: 20px;
+	margin-left: 70px;
+}
+
+.imageText8 a {
+	float: left;
+	margin-left: 9px;
+	margin-top: 36px;
+	font-size: 18px;
+}
+
+.imageText8 img {
+	float: left;
+	margin-top: 20px;
+	margin-left: 220px;
+}
+
+.imageText9 a {
+	float: left;
+	margin-left: 10px;
+	margin-top: 27px;
+	font-size: 18px;
+}
+
+.imageText9 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 72px;
+}
+
+.imageText10 a {
+	float: left;
+	margin-left: 8px;
+	margin-top: 27px;
+	font-size: 18px;
+}
+
+.imageText10 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 187px;
+}
+
+.imageText11 a {
+	float: left;
+	margin-left: 9px;
+	margin-top: 23px;
+	font-size: 18px;
+}
+
+.imageText11 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 70px;
+}
+
+.imageText12 a {
+	float: left;
+	margin-left: 7px;
+	margin-top: 23px;
+	font-size: 18px;
+}
+
+.imageText12 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 165px;
+}
+
+.imageText13 a {
+	float: left;
+	margin-left: 9px;
+	margin-top: 23px;
+	font-size: 18px;
+}
+
+.imageText13 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 73px;
+}
+
+.imageText14 a {
+	float: left;
+	margin-left: 5px;
+	margin-top: 23px;
+	font-size: 18px;
+}
+
+.imageText14 img {
+	float: left;
+	margin-top: 10px;
+	margin-left: 207px;
+}
+
+#nav-tab {
+	margin-left: 25px;
+	width: 1200px;
+}
+
+#nav-home-tab {
+	float: left;
+	margin-left: 20px;
+	font-size: 22px;
+	width: 392px;
+	text-align: center;
+}
+
+#nav-profile-tab {
+	float: left;
+	width: 392px;
+	font-size: 22px;
+	text-align: center;
+}
+
+#nav-contact-tab {
+	float: left;
+	width: 392px;
+	font-size: 22px;
+	text-align: center;
+}
+
+#nav-tabContent {
+	margin-left: 25px;
+	width: 1200px;
+}
+
+#nav-home {
+	float: left;
+	margin-left: 24px;
+	margin-top: 10px;
+	font-size: 18px;
+	width: 392px;
+	text-align: center;
+}
+
+#nav-profile {
+	float: left;
+	margin-left: 410px;
+	margin-top: 10px;
+	width: 392px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#nav-contact {
+	float: left;
+	margin-left: 810px;
+	margin-top: 10px;
+	width: 392px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.boss1 {
+	overflow: hidden;
+}
+
+.boss1 div {
+	width: 400px;
+	float: left;
+	margin-left: 43px;
+}
+
+.boss1 div img {
+	display: block;
+	width: 100%;
+}
+
+#pdf1 {
+	text-decoration: none;
+	color: black;
+}
+</style>
+
+</head>
+<body>
+	<nav aria-label="breadcrumb" style="height: 30px">
+		<ol class="breadcrumb" style="height: 30px">
+			<li class="breadcrumb-item" style="margin-top: -7px"><a href="#"><small>售前客服</small></a></li>
+			<li class="breadcrumb-item" style="margin-top: -7px"><a href="#"><small>售后服务</small></a></li>
+			<li class="breadcrumb-item" style="margin-top: -7px"><a
+				href="login.jsp"><small>登录</small></a></li>
+			<li class="breadcrumb-item" style="margin-top: -7px"><a
+				href="reg.jsp"><small>注册</small></a></li>
+			<li class="breadcrumb-item active" aria-current="page"
+				style="margin-top: -7px"><small>售前咨询电话400-886-1234</small></li>
+		</ol>
+	</nav>
+	<nav class="navbar navbar-expand-lg navbar-light"
+		style="background-color: #e3f2fd;">
+		<a class="navbar-brand" href="index.jsp">全部保险产品</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="index.jsp">首页
+						<span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="customer.html">客户服务</a></li>
+				<li class="nav-item"><a class="nav-link" href="family.jsp">个人与家庭保险
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">关于我们</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">公开信息披露</a></li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search"
+					placeholder="请输入您要搜索的产品" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+
+	</nav>
+
+	<img src="photo/timg.PNG" width="100%" height="320px">
+
+	<div class="boss">
+		<div>
+			<img src="photo/s1.PNG" style="transform: scale(0.9)">
+		</div>
+		<div>
+			<img src="photo/s2.PNG" style="transform: scale(0.9)">
+		</div>
+		<div>
+			<img src="photo/s3.PNG" style="transform: scale(0.9)">
+		</div>
+		<div>
+			<img src="photo/s4.PNG" style="transform: scale(0.9)">
+		</div>
+		<div>
+			<img src="photo/s5.PNG" style="transform: scale(0.9)">
+		</div>
+	</div>
+
+	<div>
+		<h3 style="left: 20px; position: relative">表格资料下载</h3>
+	</div>
+	<hr style="width: 1200px">
+
+	<div class="a" style="top: -8px; position: relative">
+		<div class="imageText1">
+			<img src="photo/tubiao1.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">保险理赔表格</a>
+		</div>
+		<div class="imageText2">
+			<img src="photo/tubiao2.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">高端医险专用表格</a>
+		</div>
+		<div style="clear: both;"></div>
+
+		<div class="imageText3">
+			<img src="photo/tubiao3.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">保单变更表格</a>
+		</div>
+		<div class="imageText4">
+			<img src="photo/tubiao4.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">投连险专用表格</a>
+		</div>
+		<div style="clear: both;"></div>
+
+		<div class="imageText5">
+			<img src="photo/tubiao5.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">理赔资料对照表格</a>
+		</div>
+		<div class="imageText6">
+			<img src="photo/tubiao6.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">逸享安康专用表格</a>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<hr style="width: 1200px">
+
+	<div class="b" style="left: 840px; top: -234px; position: relative">
+		<div class="card" style="width: 18rem;">
+			<div class="card-header">常用表格</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="pdf1.html" id="pdf1">理赔申请表</a></li>
+				<li class="list-group-item">个人税收居民身份声明</li>
+				<li class="list-group-item">理赔款领款账户变更申请书</li>
+			</ul>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+
+	<div>
+		<h3 style="left: 20px; top: -170px; position: relative">价格利率查询</h3>
+		<hr style="top: -150px; position: relative">
+	</div>
+
+	<div class="c" style="top: -154px; position: relative">
+		<div class="imageText7">
+			<img src="photo/tubiao7.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">单位价格查询</a>
+		</div>
+		<div class="imageText8">
+			<img src="photo/tubiao8.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">保单借款(贷款)利率</a>
+		</div>
+		<div style="clear: both;"></div>
+
+		<div class="imageText9">
+			<img src="photo/tubiao9.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">投资账户月度报告</a>
+		</div>
+		<div class="imageText10">
+			<img src="photo/tubiao10.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">红利累积利率</a>
+		</div>
+		<div style="clear: both;"></div>
+
+		<div class="imageText11">
+			<img src="photo/tubiao11.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">半年度/年度信息公告</a>
+		</div>
+		<div class="imageText12">
+			<img src="photo/tubiao12.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">身故保险金累计利率</a>
+		</div>
+		<div style="clear: both;"></div>
+
+		<div class="imageText13">
+			<img src="photo/tubiao13.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">万能险结算利率</a>
+		</div>
+		<div class="imageText14">
+			<img src="photo/tubiao14.PNG" style="transform: scale(0.6)"> <a
+				href="" style="color: black; text-decoration: none">年金/生存保险金累计利率</a>
+		</div>
+		<div style="clear: both;"></div>
+
+		<div class="d" style="left: 840px; top: -254px; position: relative">
+			<div class="card" style="width: 18rem;">
+				<div class="card-header">价格公告</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账户名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单位价格</li>
+					<li class="list-group-item">&nbsp;&nbsp;锐取A型账户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.61875780</li>
+					<li class="list-group-item">&nbsp;&nbsp;灵动A型账户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.75258134</li>
+					<li class="list-group-item">&nbsp;&nbsp;添利A型账户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.52032305</li>
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<hr style="top: -220px; position: relative; width: 1200px">
+
+		<img src="photo/lg1.PNG" width="95%"
+			style="top: -180px; left: 20px; position: relative">
+
+		<div>
+			<h3 style="left: 20px; top: -125px; position: relative">常见问题</h3>
+			<hr style="top: -110px; position: relative; width: 1200px">
+		</div>
+
+	</div>
+
+	<div class="e" style="top: -254px; position: relative">
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab"
+					data-toggle="tab" href="#nav-home" role="tab"
+					aria-controls="nav-home" aria-selected="true">保单问题</a> <a
+					class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+					href="#nav-profile" role="tab" aria-controls="nav-profile"
+					aria-selected="false">理赔答疑</a> <a class="nav-item nav-link"
+					id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+					role="tab" aria-controls="nav-contact" aria-selected="false">投资型产品</a>
+			</div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+				aria-labelledby="nav-home-tab">*如果我有问题，该如何联系你们？</div>
+			<div class="tab-pane fade" id="nav-profile" role="tabpanel"
+				aria-labelledby="nav-profile-tab">*报案时需要提供哪些信息？</div>
+			<div class="tab-pane fade" id="nav-contact" role="tabpanel"
+				aria-labelledby="nav-contact-tab">*保险公司的分红和银行存款的利息有什么不同？</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<hr style="top: -230px; position: relative; width: 1200px">
+
+	<div>
+		<h3 style="left: 20px; top: -200px; position: relative">理赔案例</h3>
+	</div>
+
+	<div class="boss1" style="top: -160px; position: relative">
+		<div>
+			<img src="photo/lg2.PNG">
+		</div>
+		<div>
+			<img src="photo/lg3.PNG">
+		</div>
+		<div>
+			<img src="photo/lg4.PNG">
+		</div>
+	</div>
+
+</body>
+</html>
