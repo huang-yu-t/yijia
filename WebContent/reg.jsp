@@ -23,8 +23,9 @@
 				aria-expanded="false"> ${username==null?"登录":username} </a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="reg.jsp">注册</a> 
+					<a class="dropdown-item" href="login.jsp">登陆</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="/test02/Logout">注销</a>
+					<a class="dropdown-item" href="Logout">注销</a>
 				</div></small></li>
 				<li class="breadcrumb-item active" aria-current="page"
 					style="margin-top: -7px"><small>售前咨询电话400-886-1234</small></li>
@@ -38,7 +39,7 @@
 					<p class="lead" style="color: #778899">守护你的快乐每一天！</p>
 					<hr class="my-4">
 					<p style="color: #778899">点击下方了解我们</p>
-					<a class="btn btn-primary btn-lg" href="#" role="button"
+					<a class="btn btn-primary btn-lg" href="yjIntro.jsp" role="button"
 						style="background-color: #BC8F8F; border-color: #BC8F8F">关于我们</a>
 				</div>
 			</div>

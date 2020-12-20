@@ -24,8 +24,9 @@
 				aria-expanded="false"> ${username==null?"登录":username} </a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="reg.jsp">注册</a> 
+					<a class="dropdown-item" href="login.jsp">登陆</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="/test02/Logout">注销</a>
+					<a class="dropdown-item" href="Logout">注销</a>
 				</div></small></li>
 			<li class="breadcrumb-item active" aria-current="page"
 				style="margin-top: -7px"><small>售前咨询电话400-886-1234</small></li>
@@ -49,7 +50,7 @@
 				<li class="nav-item"><a class="nav-link" href="customer.html">客户服务</a></li>
 				<li class="nav-item"><a class="nav-link" href="family.jsp">个人与家庭保险
 				</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">关于我们</a></li>
+				<li class="nav-item"><a class="nav-link" href="teamInfo.jsp">关于我们</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">公开信息披露</a></li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
@@ -89,13 +90,13 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">健康保险</a> <a
-					class="nav-item nav-link active" href="#">儿童保险</a> <a
-					class="nav-item nav-link active" href="#">意外保险</a> <a
-					class="nav-item nav-link active" href="#">年金保险</a> <a
-					class="nav-item nav-link active" href="#">父母保险</a> <a
-					class="nav-item nav-link active" href="#">免费保险</a> <a
-					class="nav-item nav-link active" href="#">高端医疗保险</a>
+				<a class="nav-item nav-link active" href="healthbx.jsp">健康保险</a> <a
+					class="nav-item nav-link active" href="kidsbx.jsp">儿童保险</a> <a
+					class="nav-item nav-link active" href="ywbx.jsp">意外保险</a> <a
+					class="nav-item nav-link active" href="njbx.jsp">年金保险</a> <a
+					class="nav-item nav-link active" href="fmbx.jsp">父母保险</a> <a
+					class="nav-item nav-link active" href="mfbx.jsp">免费保险</a> <a
+					class="nav-item nav-link active" href="ylbx.jsp">高端医疗保险</a>
 			</div>
 		</div>
 	</nav>

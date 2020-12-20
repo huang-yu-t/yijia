@@ -18,14 +18,16 @@
 			<li class="breadcrumb-item" style="margin-top: -7px"><a href="#"><small>售前客服</small></a></li>
 			<li class="breadcrumb-item" style="margin-top: -7px"><a href="#"><small>售后服务</small></a></li>
 			<li class="nav-item dropdown" style="margin-top: -12px"><small><a
-				class="nav-link dropdown-toggle" href="login.jsp" id="navbarDropdown"
-				role="button" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false"> ${username==null?"登录":username} </a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="reg.jsp">注册</a> 
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="/test02/Logout">注销</a>
-				</div></small></li>
+					class="nav-link dropdown-toggle" href="login.jsp"
+					id="navbarDropdown" role="button" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false">
+						${username==null?"登录":username} </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="reg.jsp">注册</a> <a
+							class="dropdown-item" href="login.jsp">登陆</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="Logout">注销</a>
+					</div></small></li>
 			<li class="breadcrumb-item active" aria-current="page"
 				style="margin-top: -7px"><small>售前咨询电话400-886-1234</small></li>
 		</ol>
@@ -48,7 +50,7 @@
 				<li class="nav-item"><a class="nav-link" href="customer.html">客户服务</a></li>
 				<li class="nav-item"><a class="nav-link" href="family.jsp">个人与家庭保险
 				</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">关于我们</a></li>
+				<li class="nav-item"><a class="nav-link" href="teamInfo.jsp">关于我们</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">公开信息披露</a></li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
@@ -115,11 +117,16 @@
 					<h5 class="card-header text-success">安享康健优享版重大疾病保险产品计划</h5>
 					<div class="card-body">
 						<p class="card-text">特定高发癌症双倍赔付</p>
-						<p>
-							性别：
-							<button type="button" class="btn btn-outline-primary">男</button>
-							<button type="button" class="btn btn-outline-primary">女</button>
-						</p>
+						<div class="btn-group btn-group-toggle" data-toggle="buttons">
+							性别： 
+							<label class="btn btn-outline-primary active"> <input
+								type="radio" name="options" id="option1" autocomplete="off"
+								checked> 男
+							</label>
+							<label class="btn btn-outline-primary">
+   	 							<input type="radio" name="options" id="option2" autocomplete="off"> 女
+  							</label>
+						</div>
 
 						<p>
 							出生日期： <select name="days">
@@ -130,28 +137,48 @@
 							</select>
 						</p>
 
-						<p>
+						<div class="btn-group btn-group-toggle" style="margin-top: 10px" data-toggle="buttons">
 							保障金额：
-							<button type="button" class="btn btn-outline-primary">5万</button>
-							<button type="button" class="btn btn-outline-primary">10万</button>
-							<button type="button" class="btn btn-outline-primary">20万</button>
-							<button type="button" class="btn btn-outline-primary">30万</button>
-							<button type="button" class="btn btn-outline-primary">40万</button>
-						</p>
-
-						<p>
+							<label class="btn btn-outline-primary active"> <input
+								type="radio" name="options" id="option1" autocomplete="off"
+								checked> 5万
+							</label>
+							<label class="btn btn-outline-primary">
+   	 							<input type="radio" name="options" id="option2" autocomplete="off"> 10万
+  							</label>
+  							<label class="btn btn-outline-primary">
+   	 							<input type="radio" name="options" id="option2" autocomplete="off"> 20万
+  							</label>
+							<label class="btn btn-outline-primary">
+   	 							<input type="radio" name="options" id="option2" autocomplete="off"> 30万
+  							</label>
+  							<label class="btn btn-outline-primary">
+   	 							<input type="radio" name="options" id="option2" autocomplete="off"> 40万
+  							</label>
+						</div>
+						<div class="btn-group btn-group-toggle" style="margin-top: 10px" data-toggle="buttons">
 							交费方式：
-							<button type="button" class="btn btn-outline-primary">月交</button>
-							<button type="button" class="btn btn-outline-primary">年交</button>
-						</p>
+							<label class="btn btn-outline-primary active"> <input
+								type="radio" name="options" id="option1" autocomplete="off"
+								checked> 月交
+							</label>
+							<label class="btn btn-outline-primary">
+   	 							<input type="radio" name="options" id="option2" autocomplete="off"> 年交
+  							</label>
+						</div>
 
-						<p>
+						<div class="btn-group btn-group-toggle" style="margin-top: 10px" data-toggle="buttons">
 							交费年限：
-							<button type="button" class="btn btn-outline-primary">15年</button>
-							<button type="button" class="btn btn-outline-primary">20年</button>
-						</p>
+							<label class="btn btn-outline-primary active"> <input
+								type="radio" name="options" id="option1" autocomplete="off"
+								checked> 15年
+							</label>
+							<label class="btn btn-outline-primary">
+   	 							<input type="radio" name="options" id="option2" autocomplete="off"> 20年
+  							</label>
+						</div>
 
-						<div class="form-group row">
+						<div class="form-group row" style="margin-top: 10px">
 							<label for="inputEmail3" class="col-sm-3 col-form-label">您的姓名：</label>
 							<div class="col-sm-7">
 								<input type="text" class="form-control" id="inputEmail3"
@@ -159,7 +186,7 @@
 							</div>
 						</div>
 
-						<div class="form-group row">
+						<div class="form-group row" style="margin-top: 10px">
 							<label for="inputEmail3" class="col-sm-3 col-form-label">您的电话：</label>
 							<div class="col-sm-7">
 								<input type="text" class="form-control" id="inputEmail3"
@@ -168,11 +195,19 @@
 						</div>
 
 						<p>保费：</p>
-						<a href="#" class="btn btn-primary">在线测保费</a>
-						<p class="nav-link">
-							<input type="checkbox" name="strong" value="agree">本人同意接受
-							《个人信息使用授权》 及招商信诺后续致电联系进行保险服务<br>
-						</p>
+						<form action="tb.jsp">
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input is-invalid" type="checkbox"
+										value="" id="invalidCheck3" required> <label
+										class="form-check-label" for="invalidCheck3"
+										style="color: black">本人同意接受 《个人信息使用授权》
+										及招商信诺后续致电联系进行保险服务 </label>
+									<div class="invalid-feedback">点击同意</div>
+								</div>
+							</div>
+							<button class="btn btn-primary" href="tb.jsp" style="submit">立即投保</button>
+						</form>
 					</div>
 				</div>
 			</div>

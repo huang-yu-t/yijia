@@ -114,8 +114,9 @@
 				aria-expanded="false"> ${username==null?"登录":username} </a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="reg.jsp">注册</a> 
+					<a class="dropdown-item" href="login.jsp">登陆</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="/test02/Logout">注销</a>
+					<a class="dropdown-item" href="Logout">注销</a>
 				</div></small></li>
 				<li class="breadcrumb-item active" aria-current="page"
 					style="margin-top: -7px"><small>售前咨询电话400-886-1234</small></li>
@@ -139,7 +140,7 @@
 					<li class="nav-item"><a class="nav-link" href="customer.html">客户服务</a></li>
 					<li class="nav-item"><a class="nav-link" href="family.jsp">个人与家庭保险
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">关于我们</a></li>
+					<li class="nav-item"><a class="nav-link" href="teamInfo.jsp">关于我们</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">公开信息披露</a></li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
@@ -206,7 +207,7 @@
 					<div class="card-body">
 						<h5 class="card-title">自在人生年金</h5>
 						<p class="card-text">20倍保额锁定未来，确定领，保证领，终身领。</p>
-						<a href="#" class="btn btn-primary">了解详情</a>
+						<a href="njbx.jsp" class="btn btn-primary">了解详情</a>
 					</div>
 				</div>
 			</div>
@@ -216,7 +217,7 @@
 					<div class="card-body">
 						<h5 class="card-title">畅享百万畅行意外险</h5>
 						<p class="card-text">交10年保30年，140%领取已交保费</p>
-						<a href="#" class="btn btn-primary">了解详情</a>
+						<a href="ywbx.jsp" class="btn btn-primary">了解详情</a>
 					</div>
 				</div>
 			</div>
@@ -226,7 +227,7 @@
 					<div class="card-body">
 						<h5 class="card-title">2万高发癌症保障</h5>
 						<p class="card-text">免费领取，首次领取就给付</p>
-						<a href="#" class="btn btn-primary">了解详情</a>
+						<a href="mfbx.jsp" class="btn btn-primary">了解详情</a>
 					</div>
 				</div>
 			</div>
@@ -236,7 +237,7 @@
 					<div class="card-body">
 						<h5 class="card-title">老友安心防癌险</h5>
 						<p class="card-text">不到4/天，超长保障到80岁。</p>
-						<a href="#" class="btn btn-primary">了解详情</a>
+						<a href="fmbx.jsp" class="btn btn-primary">了解详情</a>
 					</div>
 				</div>
 			</div>
@@ -251,7 +252,7 @@
 					<div class="card-body">
 						<h5 class="card-title">高端医疗险</h5>
 						<p class="card-text">130种疾病保障，满期领取115%保费，特定疾病确认后豁免剩余保费。</p>
-						<a href="#" class="btn btn-primary">了解详情</a>
+						<a href="ylbx.jsp" class="btn btn-primary">了解详情</a>
 					</div>
 				</div>
 			</div>
@@ -261,7 +262,7 @@
 					<div class="card-body">
 						<h5 class="card-title">珍爱宝贝教育金</h5>
 						<p class="card-text">月交199元起的少儿险，教育+大病+住院+意外4合一全面保障。</p>
-						<a href="#" class="btn btn-primary">了解详情</a>
+						<a href="kidsbx.jsp" class="btn btn-primary">了解详情</a>
 					</div>
 				</div>
 			</div>
@@ -276,7 +277,7 @@
 					<p class="card-text" style="color: #778899">助客户高效便捷办理各项保险服务</p>
 					<a href="#" class="btn btn-primary" id="kfbtn1">保单查询</a> <a
 						href="#" class="btn btn-primary" id="kfbtn2">保单变更指引</a> <a
-						href="#" class="btn btn-primary" id="kfbtn3">理赔流程指引</a> <a
+						href="lipei01.jsp" class="btn btn-primary" id="kfbtn3">理赔流程指引</a> <a
 						href="#" class="btn btn-primary" id="kfbtn4">服务承诺</a>
 				</div>
 				<a href="#" class="btn btn-primary"
